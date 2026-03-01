@@ -3,7 +3,7 @@
 Please use this repository for constructing the Flask webhook receiver.
 
 *******************
-//demo setup 
+
 ## Setup
 
 * Create a new virtual environment

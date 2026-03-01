@@ -5,3 +5,5 @@ def create_app():
     app = Flask(__name__)
     app.register_blueprint(webhook_blueprint)
     return app
+
+#demo setup for webhook receiver
