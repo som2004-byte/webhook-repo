@@ -18,7 +18,7 @@ def github_webhook():
 
     if event_type == "push":
         document = {
-            "request_id": payload.get("after"),
+            "request_id": payload.get("after") or "",
             "author": payload["pusher"]["name"],
             "action": "PUSH",
             "from_branch": None,
