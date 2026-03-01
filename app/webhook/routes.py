@@ -54,7 +54,6 @@ def github_webhook():
         try:
             get_events_collection().insert_one(document)
         except Exception:
-            # If MongoDB isn't running, keep the app usable (ngrok/GitHub delivery still succeeds).
             fallback_insert_event(document)
 
     return jsonify({"status": "ok"})
